@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Page</title>
+    <link rel="icon" type="image/x-icon" href="FaCET1.png">
+</head>
+<style type="text/css">
+    body{
+        font-family: sans-serif;
+        background: url('hehe.jpg');
+        background-size: cover;
+    }
+    #container{
+        width: 450px;
+        height: auto;
+        border: 1px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+        font-size: 14px; 
+    }
+    h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    #logo{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 14px;
+        min-height: 20vh;
+        border-radius: 10px 10px 0px 0px;
+        padding: 10px 0px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        position: relative;
+        background: url('hehe.jpg');
+        background-size: cover;
+        color: whitesmoke;
+    }
+    #logo img{
+        width: 100px;
+        height: 100px;
+    }
+    #inputGroup{
+        width: 400px;
+        margin:  auto;
+    }
+    .inputfield{
+        margin: 20px auto;
+    }
+    .inputfield input, .inputfield select {
+        width: 100%;
+        box-sizing: border-box;
+        height: 30px;
+        padding: 5px;
+        border: none;
+        border-radius: 10px;
+    }
+    #container #btn{
+        text-align: center;
+    }
+    #btn{
+        width: 200px;
+        margin: auto;
+        cursor: pointer;
+    }
+    #btn button{
+        margin: 10px;
+        background: green;
+        padding:10px;
+        border: none;
+        border-radius: 50px;
+        font-size: 14px;
+        color: white;
+    }
+    #btn button:hover{
+        font-size: 15px;
+        background-color: yellowgreen;
+        transition: 0.1s all ease;
+    }
+
+</style>
+<body>
+    <form action="">
+        
+        <div id="container">
+            <div id="logo">
+                <img src="FaCET1.png">
+                <h3>Faculty of Computing, Engineering, and Technology</h3>
+            </div>
+
+            <div id="inputGroup">
+                  <h2>Student Registration Form</h2>
+                <small>Personal Information</small>
+                <div class="inputfield">
+                    <label>Last Name:</label><br>
+                    <input type="text" id="lastname" autocomplete="off" required>
+                </div>
+                <div class="inputfield">
+                    <label>Middle Name:</label><br>
+                    <input type="text" id="Middlename" autocomplete="off" required>
+                </div>
+                <div class="inputfield">
+                    <label>First Name:</label><br>
+                    <input type="text" id="firstname" autocomplete="off" required>
+                </div>
+
+                <div class="inputfield">
+                    <label>Suffix:</label><br>
+                    <select id="suffix" autocomplete="off" required>
+                        <option>Select Suffix</option>
+                        <option>None</option>
+                        <option>Jr</option>
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                        <option>IV</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Sex:</label><br>
+                    <select id="sex" autocomplete="off" required>
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option> 
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Birthday:</label><br>
+                    <input type="date" id="birthday" autocomplete="off" required>
+                </div>
+                <div class="inputfield">
+                    <label>Course:</label>
+                    <select id="course" autocomplete="off" required>
+                        <option>Select Course</option>
+                        <option>Bachelor of Science in Information Technology</option>
+                        <option>Bachelor of Science in Mathematics</option> 
+                        <option>Bachelor of Science in Mathematics with Research Statistics</option> 
+                        <option>Bachelor of Science in Civil Engineering</option> 
+                        <option>Bachelor in Industrial Technology Management Major in Automotive Technology</option> 
+                    </select>
+                </div>
+                <small>User Account Information</small>
+                <div class="inputfield">
+                    <label>Email Address:</label>
+                    <input type="email" id="email" autocomplete="off" required>
+                </div>
+                 <div class="inputfield">
+                    <label>Password:</label>
+                    <input type="password" id="password" autocomplete="off" required>
+                </div>
+                <div id="btn">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>     
+        </div>
+    </form>
+
+</body>
+</html>
